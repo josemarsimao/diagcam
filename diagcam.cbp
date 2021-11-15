@@ -7,21 +7,25 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/diagcam" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
+				<Option output="./bin/Debug/diagcam" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./object/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="../v4l2misc" />
+					<Add directory="../kbhit" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/diagcam" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
+				<Option output="./bin/Release/diagcam" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./object/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="../v4l2misc" />
+					<Add directory="../kbhit" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -31,20 +35,17 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../../onedrive/projects/basecode/diagcam.c">
+		<Unit filename="../kbhit/kbhit.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../onedrive/projects/basecode/kbhit.c">
+		<Unit filename="../kbhit/kbhit.h" />
+		<Unit filename="../v4l2misc/v4l2misc.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../onedrive/projects/basecode/kbhit.h" />
-		<Unit filename="../../onedrive/projects/basecode/v4l2misc.c">
+		<Unit filename="../v4l2misc/v4l2misc.h" />
+		<Unit filename="diagcam.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../onedrive/projects/basecode/v4l2misc.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
