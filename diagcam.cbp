@@ -35,14 +35,24 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Linker>
+		</Linker>
 		<Unit filename="../kbhit/kbhit.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../kbhit/kbhit.h" />
-		<Unit filename="../v4l2misc/v4l2misc.c">
+		<Unit filename="../v4l2misc/v4l2core.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../v4l2misc/v4l2misc.h" />
+		<Unit filename="../v4l2misc/v4l2core.h" />
+		<Unit filename="../v4l2misc/v4l2ctl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../v4l2misc/v4l2ctl.h" />
+		<Unit filename="../v4l2misc/v4l2enum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../v4l2misc/v4l2enum.h" />
 		<Unit filename="diagcam.c">
 			<Option compilerVar="CC" />
 		</Unit>

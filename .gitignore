@@ -1,0 +1,8 @@
+# Saídas de compilação (Code::Blocks)
+bin/
+object/
+*.o
+*.d
+
+# Configurações locais do editor
+.vscode/
